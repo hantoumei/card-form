@@ -1,0 +1,11 @@
+.just-validate-error-label {
+  font-size: 10px;
+}
+
+.just-validate-error-field {
+  border-color: rgb(184, 17, 17);
+}
+
+.just-validate-success-field {
+  border-color: rgb(46, 201, 97);
+}

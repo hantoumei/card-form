@@ -1,3 +1,10 @@
-# Adaptive React Catalog
+# React credit card form
 
-Adaptive ReactJS application for an online-store's catalog
+A credit card validating form. ReactJS/Vite
+Includes following libraries:
+
+just-validate
+https://github.com/horprogs/Just-validate
+
+input-mask
+https://github.com/RobinHerbots/Inputmask
