@@ -1,0 +1,76 @@
+@import "../../index";
+
+.custom-input {
+
+  &__field {
+    width: 100%;
+    color: $color-bokara-grey;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 35px 12px 0;
+    border: none;
+    border-bottom: 1px solid $color-stone;
+    background-color: transparent;
+
+    @media (max-width: 2400px) {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0 30px 9px 0;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &::placeholder {
+      color: $color-bokara-grey;
+    }
+
+    &:focus-visible,
+    &:hover {
+      outline: none;
+      border-color: $color-moon-mist;
+    }
+
+    &:focus-visible.custom-input__field::placeholder,
+    &:hover.custom-input__field::placeholder {
+      color: $color-cloudy;
+    }
+
+  }
+
+  &.custom-input--error .custom-input__field {
+    border-color: $color-lava-red;
+
+    &:focus-visible,
+    &:hover {
+      outline: none;
+      border-color: $color-lava-red;
+    }
+  }
+
+  &__error-text {
+    display: none;
+    margin: 10px 0 0;
+    color: $color-lava-red;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    @media (max-width: 2400px) {
+      font-size: 12px;
+      line-height: 16px;
+      margin: 5px 0 0;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  &.custom-input--error .custom-input__error-text {
+    display: block;
+  }
+}

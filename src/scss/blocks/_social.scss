@@ -1,0 +1,56 @@
+@import "../../index";
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px 25px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: 2400px) {
+    gap: 5px 15px;
+  }
+
+  @include vp-767 {
+    justify-content: flex-start;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: $color-bokara-grey;
+
+    @include vp-1023 {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-moon-mist;
+    }
+  }
+
+  &__link-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+
+    @media (max-width: 2400px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include vp-1023 {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
